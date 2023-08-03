@@ -1,0 +1,137 @@
+.contacts {
+  padding-bottom: 151px;
+}
+.contacts__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 140px;
+  padding-top: 43px;
+}
+.contacts-title {
+  margin-left: -1px;
+}
+.contacts-number {
+  position: relative;
+  width: 100%;
+}
+.contacts-number::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -48px;
+  width: 13px;
+  height: 22px;
+  background-image: url("../recources/mobile.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts-link {
+  font-size: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  color: #121212;
+}
+.contacts-link:hover {
+  opacity: 0.5;
+  border-bottom: 3px solid rgba(18, 18, 18, 1);
+}
+.contacts-mail {
+  position: relative;
+  top: -3px;
+  width: 100%;
+}
+.contacts-mail::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -42px;
+  left: 2px;
+  width: 21px;
+  height: 17px;
+  background-image: url("../recources/mail.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contacts-link {
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  text-decoration: none;
+}
+.contacts-link:hover {
+  opacity: 0.5;
+  border-bottom: 3px solid rgba(18, 18, 18, 1);
+}
+@media (max-width: 1199px) {
+  .contacts {
+    padding-bottom: 81px;
+  }
+  .contacts-title {
+    position: relative;
+    margin-left: 1px;
+  }
+  .contacts__wrapper {
+    column-gap: 144px;
+  }
+  .contacts-number {
+    top: 1.5px;
+    left: 2px;
+    width: 100%;
+  }
+  .contacts-number::before {
+    top: -49px;
+    left: -1px;
+  }
+  .contacts-link {
+    font-size: 45px;
+    line-height: 60px;
+  }
+  .contacts-mail::before {
+    top: -41px;
+    left: 2px;
+    width: 20px;
+    height: 16px;
+  }
+}
+@media (max-width: 767px) {
+  .contacts {
+    padding-bottom: 77px;
+  }
+  .contacts-title {
+    left: 2px;
+    bottom: 0;
+  }
+  .contacts__wrapper {
+    flex-direction: column;
+    padding-top: 36px;
+  }
+  .contacts-number {
+    margin-left: -2px;
+    width: 100%;
+  }
+  .contacts-mail {
+    width: 100%;
+  }
+  .contacts-link {
+    font-size: 35px;
+    line-height: 46px;
+  }
+  .contacts-number::before {
+    background-size: 100%;
+    top: -36px;
+    margin-left: 2px;
+    width: 10px;
+    height: 17px;
+  }
+  .contacts-mail {
+    margin-top: 63px;
+  }
+  .contacts-mail::before {
+    background-size: 100%;
+    top: -35px;
+    width: 15px;
+    height: 12px;
+  }
+}

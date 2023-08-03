@@ -1,0 +1,179 @@
+.services {
+  background-color: #121212;
+  color: #ffffff;
+  padding: 150px 0;
+}
+.services-title {
+  margin: 1px 0 29px 2.5px;
+  width: 66px;
+  height: 25px;
+  padding-bottom: 2px;
+  color: #ffffff;
+}
+.wrapper {
+  display: flex;
+  margin-bottom: 97.5px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 85px;
+}
+.service {
+  width: calc(50% - 5px);
+}
+.service-img {
+  position: relative;
+  height: 388px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+}
+.service-price-wrapper {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+}
+.service-price {
+  padding: 5px 21.5px;
+  font-size: 22px;
+  line-height: 30px;
+  background: #ad1818;
+  border-radius: 5px;
+}
+.service-plan {
+  background-image: url("../recources/service-1.jpg");
+}
+.service-design {
+  background-image: url("../recources/service-2.jpg");
+}
+.service-control {
+  background-image: url("../recources/service-3.jpg");
+}
+.service-equipment {
+  background-image: url("../recources/service-4.jpg");
+}
+.service-text {
+  margin-top: 26.5px;
+  margin-left: 1.5px;
+  height: 41px;
+  padding-left: 2px;
+}
+.service-btn {
+  margin-top: 5px;
+  height: 154px;
+  padding: 54.5px 0;
+  letter-spacing: -0.03em;
+  background: #ad1818;
+  color: #ffffff;
+  font-family: "Manrope";
+}
+@media (max-width: 1199px) {
+  .services {
+    padding-bottom: 120px;
+  }
+  .container {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .services-title {
+    margin-left: 4px;
+    margin-bottom: 30px;
+  }
+  .wrapper {
+    margin-bottom: 80px;
+    row-gap: 80px;
+  }
+  .service-img {
+    height: 315px;
+  }
+  .service-plan {
+    background-image: url("../recources/service-tablet-1.jpg");
+  }
+  .service-design {
+    background-image: url("../recources/service-tablet-2.jpg");
+  }
+  .service-control {
+    background-image: url("../recources/service-tablet-3.jpg");
+  }
+  .service-equipment {
+    background-image: url("../recources/service-tablet-4.jpg");
+  }
+  .service-text {
+    margin-top: 16.4px;
+    margin-left: -3px;
+    width: 100%;
+    height: 40px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .service-price-wrapper {
+    left: 33px;
+  }
+  .service-price {
+    padding: 6.5px 27.1px;
+    font-size: 20px;
+    line-height: 27px;
+  }
+  .service-btn {
+    margin-top: -1px;
+    margin-left: 2px;
+    padding: 55px 0;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .services {
+    padding-top: 79.1px;
+    padding-bottom: 80px;
+    padding-left: 3px;
+  }
+  .services-title {
+    margin-bottom: 13.5px;
+    margin-left: 2.5px;
+  }
+  .service {
+    width: 100%;
+  }
+  .wrapper {
+    margin-bottom: 62px;
+    row-gap: 61px;
+  }
+  .service-img {
+    height: 240px;
+  }
+  .service-plan {
+    background-image: url("../recources/service-mobile-1.jpg");
+  }
+  .service-design {
+    background-image: url("../recources/service-mobile-2.jpg");
+  }
+  .service-control {
+    background-image: url("../recources/service-mobile-3.jpg");
+  }
+  .service-equipment {
+    background-image: url("../recources/service-mobile-4.jpg");
+  }
+  .service-price-wrapper {
+    top: 23.5px;
+    left: 23.5px;
+  }
+  .service-price {
+    padding: 5.5px 24px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .service-text {
+    margin-top: 10px;
+    margin-left: -2px;
+    height: 30px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .service-btn {
+    margin-left: -2px;
+    height: 100px;
+    font-size: 22px;
+    line-height: 30px;
+    padding: 34.3px;
+  }
+}

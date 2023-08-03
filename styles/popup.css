@@ -1,0 +1,153 @@
+.body_fixed {
+  overflow: hidden;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+}
+.popup_open {
+  opacity: 1;
+  visibility: visible;
+}
+.popup__content {
+  position: relative;
+  text-align: center;
+  left: -3px;
+  width: 777px;
+  max-height: 100%;
+  padding: 95px 55px 86px 55px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.popup__form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  margin-bottom: 80px;
+}
+
+.popup__title {
+  margin: 0;
+  margin-right: 7px;
+  font-size: 45px;
+  line-height: 61px;
+  text-transform: none;
+}
+
+.popup__text {
+  margin-top: 3px;
+  margin-left: 2px;
+  margin-bottom: 58px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  line-height: 34px;
+  padding-bottom: 8px;
+  font-family: "Manrope";
+  font-size: 25px;
+  line-height: 34px;
+  border: none;
+  border-bottom: 1px solid #000000;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input::placeholder {
+  font-size: 25px;
+  line-height: 34px;
+  opacity: 0.5;
+}
+
+.popup__btn {
+  width: 100%;
+  padding: 20px 0;
+  font-size: 20px;
+  line-height: 27px;
+  font-family: "Manrope";
+  border: none;
+  cursor: pointer;
+  background: #ad1818;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.popup__close-btn {
+  position: absolute;
+  top: 42px;
+  right: 43px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("../recources/close.png");
+}
+
+@media (max-width: 1199px) {
+  .popup__content {
+    margin-left: 2px;
+  }
+  .popup__title {
+    margin-left: 3px;
+  }
+}
+
+@media (max-width: 767px) {
+  .popup__content {
+    left: 0;
+    width: 100%;
+    padding: 80px 16px;
+  }
+  .popup__title {
+    margin-bottom: 10px;
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .popup__text {
+    margin: 0 auto;
+    width: 209px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+  .popup__form {
+    margin-top: 50px;
+    margin-bottom: 60px;
+    row-gap: 32px;
+  }
+  .input {
+    padding-left: 0;
+    padding-bottom: 6px;
+  }
+  .input::placeholder {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  .popup__close-btn {
+    top: 46px;
+    right: 35px;
+    margin-top: 20px;
+    background-image: url("../recources/close-mobile.png");
+    width: 17.8px;
+    height: 17.8px;
+  }
+}
